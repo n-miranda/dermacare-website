@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Button from '@/components/ui/Button'
 
 const milestones = [
@@ -19,13 +18,7 @@ const milestones = [
 export default function AboutPage() {
   return (
     <section className="space-y-14">
-      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <div className="rounded-[2rem] border border-surface bg-surface/95 p-8 shadow-soft sm:p-10">
-          <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-[2rem] border border-surface bg-background">
-            <Image src="/images/logo.png" alt="Logo DermaCare" width={100} height={100} />
-          </div>
-        </div>
-        <div className="space-y-6">
+      <div className="space-y-6">
           <p className="text-sm uppercase tracking-[0.32em] text-muted">Sobre mí</p>
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">Celeste Gayoso, Dermatocosmiatra</h1>
           <p className="max-w-2xl text-base leading-8 text-muted sm:text-lg">
@@ -37,8 +30,6 @@ export default function AboutPage() {
             <Button href="/servicios" variant="ghost">
               Ver servicios
             </Button>
-          </div>
-        </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-3">
