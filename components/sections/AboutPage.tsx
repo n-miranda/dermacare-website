@@ -18,18 +18,20 @@ const milestones = [
 export default function AboutPage() {
   return (
     <section className="space-y-14">
-      <div className="space-y-6">
-        <p className="text-sm uppercase tracking-[0.32em] text-muted">Sobre mí</p>
-        <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">Celeste Gayoso, Dermatocosmiatra</h1>
-        <p className="max-w-2xl text-base leading-8 text-muted sm:text-lg">
-          Mi pasión es ayudarte a sentirte bien con tu piel. En DermaCare combino técnica, calidez y atención
-          personalizada para que cada tratamiento sea una experiencia serena, pensada especialmente para vos.
-        </p>
-        <div className="flex flex-wrap gap-4">
-          <Button href="/agendar">Agendar cita</Button>
-          <Button href="/servicios" variant="ghost">
-            Ver servicios
-          </Button>
+      <div className="rounded-[2rem] border border-surface bg-surface/95 p-8 shadow-soft sm:p-10">
+        <div className="mx-auto max-w-2xl space-y-6 text-center">
+          <p className="text-sm uppercase tracking-[0.32em] text-muted">Sobre mí</p>
+          <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">Celeste Gayoso, Dermatocosmiatra</h1>
+          <p className="text-base leading-8 text-muted sm:text-lg">
+            Mi pasión es ayudarte a sentirte bien con tu piel. En DermaCare combino técnica, calidez y atención
+            personalizada para que cada tratamiento sea una experiencia serena, pensada especialmente para vos.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button href="/agendar">Agendar cita</Button>
+            <Button href="/servicios" variant="ghost">
+              Ver servicios
+            </Button>
+          </div>
         </div>
       </div>
 
