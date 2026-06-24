@@ -1,19 +1,18 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { Sparkles, Eye, Leaf, Smile, Star } from 'lucide-react'
+import { motion, type Variants } from 'framer-motion'
 
 const services = [
-  { icon: Smile, emoji: '💆', title: 'Cosmetología facial', desc: 'Protocolos suaves para hidratar, equilibrar y potenciar el brillo natural de tu piel.' },
-  { icon: Eye, emoji: '👁️', title: 'Pestañas', desc: 'Lifting y extensiones que definen tu mirada de forma natural y elegante.' },
-  { icon: Leaf, emoji: '🌿', title: 'Depilación', desc: 'Acabados precisos en rostro y cuerpo con técnica profesional y confort.' },
-  { icon: Star, emoji: '🤍', title: 'Diseño de cejas', desc: 'Perfilado y modelado que enmarca tu rostro con armonía y elegancia.' },
-  { icon: Sparkles, emoji: '✨', title: 'Tratamientos personalizados', desc: 'Protocolos únicos adaptados a tu tipo de piel, con resultados naturales y duraderos.' },
+  { emoji: '💆', title: 'Cosmetología facial', desc: 'Protocolos suaves para hidratar, equilibrar y potenciar el brillo natural de tu piel.' },
+  { emoji: '👁️', title: 'Pestañas', desc: 'Lifting y extensiones que definen tu mirada de forma natural y elegante.' },
+  { emoji: '🌿', title: 'Depilación', desc: 'Acabados precisos en rostro y cuerpo con técnica profesional y confort.' },
+  { emoji: '🤍', title: 'Diseño de cejas', desc: 'Perfilado y modelado que enmarca tu rostro con armonía y elegancia.' },
+  { emoji: '✨', title: 'Tratamientos personalizados', desc: 'Protocolos únicos adaptados a tu tipo de piel, con resultados naturales y duraderos.' },
 ]
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5, ease: 'easeOut' } }),
+  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } }),
 }
 
 export default function ServicesSection() {
